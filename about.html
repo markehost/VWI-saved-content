@@ -1,15 +1,97 @@
+<style type="text/css">
+	
+	#about_us {
+		font: normal 1.2em/1 Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+		text-align: left;
+	}
+	#about_us h2 {}
+	#about_us h3 {
+		margin: 0 0 6px 0;
+	}
+	#about_us a {}
+	#about_us hr {}
+	#about_us p {
+		margin: 0 0 0.5em 0;
+	}
+	#about_us p small {}
+	#about_us p address {}
+	#about_us ul {
+		list-style: none;
+	}
+	#about_us ul li {}
+	#about_us > ul > li {
+		border: 1px solid #ddd;
+		padding: 0 0 4px 0;
+	}
+	#about_us ul li ul {}
+	#about_us ul li ul li {
+		display: inline;
+	}
+	#about_us ul li ul li p {
+		margin: 0;
+	}
+	#about_us ul li ul li strong {}
+	#about_us ul li ul li p strong {}
+	#about_us ul li ul li a {}
+
+</style>
+
 <div class="" id="about_us">
 
-
-	<p>From the heart of Central New York, Village Wrought Iron manufactures thousands of finely crafted wrought iron products.</p>
-	<p>Our goal since 1975, has been to design and produce decorative, functional andlong lasting handcrafted products for your home and garden.</p>
-	<p>Our products are carefully made using the finest materials and time-tested methods of craftsmanship.  Quality and durability are our priorities.</p>
-	<p>All our coated products have a baked on powder coating to ensure that our customers will enjoy each piece for many years.</p>
+	<p>From the heart of Central New York, Village Wrought Iron manufactures thousands of finely crafted wrought iron products. Our goal since 1975, has been to design and produce decorative, functional andlong lasting handcrafted products for your home and garden.</p>
+	<p>Our products are carefully made using the finest materials and time-tested methods of craftsmanship.  Quality and durability are our priorities. All our coated products have a baked on powder coating to ensure that our customers will enjoy each piece for many years.</p>
 	<p>American Quality &amp; Craftsmanship.  Proudly Made in the U.S.A.</p>
-
 	<p><a href="https://www.villagewroughtiron.com/ecatalog/2012_Catalog.pdf">View Current Catalog</a></p>
 
+	<hr>
 
+	<h2>Contact Details</h2>
+
+	<h3>Village Wrought Iron, Inc.</h3>
+	<p>
+		<address>7756 Main Street<br>
+		Fabius N.Y. 13063</address>
+	</p>
+
+	<h3>Contact Us</h3>
+	<p>Phone: (315) 683-5589</p>
+	<p>Fax: (315) 683-5598</p>
+	<p>General Questions: <a href="mailto:info[at]villagewroughtiron.com">info@villagewroughtiron.com</a></p>
+	
+	<ul>
+		<li>
+			<ul>
+				<li><strong>Shipping Dept.</strong></li>
+				<li><p>Sue Backus <strong>ext. 14</strong></p></li>
+				<li><a href="mailto:Sue[at]villagewroughtiron.com">Sue@villagewroughtiron.com</a></li>
+			</ul>
+		</li>
+		<li>
+			<ul>
+				<li><strong>Orders &amp; Invoicing</strong></li>
+				<li><p>Customer Service <strong>ext. 10</strong></p></li>
+				<li><a href="mailto:info[at]villagewroughtiron.com">info@villagewroughtiron.com</a></li>
+			</ul>
+		</li>
+		<li>
+			<ul>
+				<li><strong>General Manager</strong></li>
+				<li><p>Nena Harrington <strong>ext. 12</strong></p></li>
+				<li><a href="mailto:nena[at]villagewroughtiron.com">nena@villagewroughtiron.com</a></li>
+			</ul>
+		</li>
+		<li>
+			<ul>
+				<li><strong>Drop Ship Inquiries</strong></li>
+				<li><p>Customer Service <strong>ext. 10</strong></p></li>
+				<li><a href="mailto:info[at]villagewroughtiron.com">info@villagewroughtiron.com</a></li>
+			</ul>
+		</li>
+	</ul>	
+
+	<h2>Hours</h2>
+	<p>8:30 a.m. - 4:30 p.m. EST.</p>
+	<p><small>Friday we close at Noon</small></p>
 
 	<h2>Holiday Schedule</h2>
 	<ul>
@@ -22,25 +104,16 @@
 		<li>New Years Eve and Day - December 31 and January 1, 2013</li>
 	</ul>
 
-	<hr>
-
-
-
-	<h2>Contact Details</h2>
-
-	<h3>Village Wrought Iron, Inc.</h3>
-	<p>
-		<address>7756 Main Street<br>
-		Fabius N.Y. 13063</address>
-	</p>
-
-	<h3>Call Us</h3>
-	<p>Phone: (315) 683-5589</p>
-	<p>Fax: (315) 683-5598</p>
-	
-	<h3>Email Us</h3>
-
-
-
-
 </div>
+<!-- #about_us -->
+
+
+
+<script type="text/javascript">
+	var maildivider="[at]" //enter divider you use to divide your email address strings
+
+	for (i=0; i<=(document.links.length-1); i++){
+	if (document.links[i].href.indexOf(maildivider)!=-1)
+	document.links[i].href=document.links[i].href.split(maildivider)[0]+"@"+document.links[i].href.split(maildivider)[1]
+	}
+</script>
