@@ -1,5 +1,9 @@
 <style type="text/css">
-	
+	.cf:before,.cf:after {content: " ";display: table;}
+	.cf:after {clear: both;}	
+	.cf {*zoom: 1;}
+	.fluid50 {margin-bottom: 10px;}
+
 	#about_us {
 		font: normal 1.2em/1 Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 		text-align: left;
@@ -8,62 +12,82 @@
 		font-size: 28px;
 	}
 	#about_us h3 {
-		font-size: 20px;
-		margin: 0 0 6px 0;
+		font-size: 18px;
+		font-weight: 800;
+		margin: 0 0 2px 0;
 	}
-	#about_us a {}
+	#about_us a {
+		color: #632A21;
+	}
+	#about_us a:hover {
+		text-decoration: underline;
+	}
 	#about_us hr {
-		border-top: 1px solid #ddd;
+		border-top: 1px solid #eee;
 		background-color: transparent;
-		margin: 20px;
+		clear: both;
+		margin: 20px 0;
 	}
 	#about_us p {
+		line-height: 1.3em;
 		margin: 0 0 0.5em 0;
 	}
 	#about_us p small {}
-	#about_us p address {}
+	#about_us address {
+		line-height: 1.3em;
+		margin: 0 0 10px;
+		font-style: normal;
+	}
 	#about_us ul {
 		list-style: none;
 	}
 	#about_us ul li {}
 	#about_us div > ul > li {
 		/*border-bottom: 1px solid #ddd;*/
-		padding: 0 0 12px 0;
+		padding: 0 0 8px 0;
 	}
 	#about_us ul li ul {}
 	#about_us ul li ul li {
-		display: inline;
+		/*display: inline;*/
+		margin: 0 0 3px;
 	}
 	#about_us ul li ul li p {
 		margin: 0;
 	}
-	#about_us ul li ul li strong {}
-	#about_us ul li ul li p strong {}
+	#about_us ul li ul li strong {
+		display: block;
+		margin: 0 0 1px;
+
+	}
+	#about_us ul li ul li p strong {
+		display: inline;
+	}
 	#about_us ul li ul li a {}
 
 </style>
 
 <div class="" id="about_us">
+	<div class="cf">
+		<h2>American Quality &amp; Craftsmanship.  Proudly Made in the U.S.A.</h2>
+		<div class="fluid50">
+			<p>From the heart of Central New York, Village Wrought Iron manufactures thousands of finely crafted wrought iron products. Our goal since 1975, has been to design and produce decorative, functional and long lasting handcrafted products for your home and garden.</p>
+		</div>
+		<div class="fluid50">
+			<p>Our products are carefully made using the finest materials and time-tested methods of craftsmanship.  Quality and durability are our priorities. All our coated products have a baked on powder coating to ensure that our customers will enjoy each piece for many years.</p>
+		</div>
+	</div>
+	<p><a href="https://www.villagewroughtiron.com/ecatalog/2012_Catalog.pdf">View Current PDF Catalog</a></p>
 
-	<p>From the heart of Central New York, Village Wrought Iron manufactures thousands of finely crafted wrought iron products. Our goal since 1975, has been to design and produce decorative, functional andlong lasting handcrafted products for your home and garden.</p>
-	<p>Our products are carefully made using the finest materials and time-tested methods of craftsmanship.  Quality and durability are our priorities. All our coated products have a baked on powder coating to ensure that our customers will enjoy each piece for many years.</p>
-	<p>American Quality &amp; Craftsmanship.  Proudly Made in the U.S.A.</p>
-	<p><a href="https://www.villagewroughtiron.com/ecatalog/2012_Catalog.pdf">View Current Catalog</a></p>
-
-	<hr>
-
+	<hr class="cf">
 
 	<h2>Contact Details</h2>
 	<div class="fluid50">
 		<h3>Village Wrought Iron, Inc.</h3>
-		<p>
-			<address>7756 Main Street<br>
-			Fabius N.Y. 13063</address>
-		</p>
-		<!-- <h3>Contact Us</h3> -->
+		<address>7756 Main Street<br />
+		Fabius N.Y. 13063</address>
 		<p>Phone: (315) 683-5589</p>
 		<p>Fax: (315) 683-5598</p>
-		<p>General Questions: <a href="mailto:info[at]villagewroughtiron.com">info@villagewroughtiron.com</a></p>
+		<p><a href="mailto:info[at]villagewroughtiron.com">info@villagewroughtiron.com</a></p>
 	</div>
 	<div class="fluid50">
 		<ul>
@@ -98,6 +122,8 @@
 		</ul>	
 	</div>
 
+	<hr>
+
 	<div class="fluid50">
 		<h2>Hours</h2>
 		<p>Monday - Thursday</p>
@@ -105,15 +131,14 @@
 		<p><small>Friday - closed at Noon</small></p>
 	</div>
 	<div class="fluid50">
-		<h2>Holiday Schedule</h2>
+		<h2>2012 Holiday Schedule</h2>
 		<ul>
-			<li>2012 Holiday Schedule</li>
 			<li>Memorial Day - May 28, 2012</li>
 			<li>Independence Day - July 4, 2012</li>
 			<li>Labor Day - September 3, 2012</li>
 			<li>Thanksgiving Day - November 22 and 23, 2012</li>
 			<li>Christmas - December 24 and 25, 2012</li>
-			<li>New Years Eve and Day - December 31 &amp: January 1, 2013</li>
+			<li>New Years Eve and Day - December 31 &amp; January 1, 2013</li>
 		</ul>
 	</div>
 
