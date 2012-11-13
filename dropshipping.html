@@ -3,51 +3,177 @@
 	.cf:after {clear: both;}	
 	.cf {*zoom: 1;}
 	.fluid50 {margin-bottom: 10px;}
+	.btn {
+	  display: inline-block;
+	  *display: inline;
+	  padding: 4px 14px;
+	  margin-bottom: 0;
+	  *margin-left: .3em;
+	  font-size: 14px;
+	  line-height: 20px;
+	  *line-height: 20px;
+	  color: #333333;
+	  text-align: center;
+	  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	  vertical-align: middle;
+	  cursor: pointer;
+	  background-color: #f5f5f5;
+	  *background-color: #e6e6e6;
+	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	  background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	  background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	  background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	  background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	  background-repeat: repeat-x;
+	  border: 1px solid #bbbbbb;
+	  *border: 0;
+	  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	  border-bottom-color: #a2a2a2;
+	  -webkit-border-radius: 4px;
+	     -moz-border-radius: 4px;
+	          border-radius: 4px;
+	  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+	  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+	  *zoom: 1;
+	  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	}
 
-	#dropshipping {
+	.btn:hover,
+	.btn:active,
+	.btn.active,
+	.btn.disabled,
+	.btn[disabled] {
+	  color: #333333;
+	  background-color: #e6e6e6;
+	  *background-color: #d9d9d9;
+	}
+
+	.btn:active,
+	.btn.active {
+	  background-color: #cccccc \9;
+	}
+	.btn:hover {
+	  color: #333333;
+	  text-decoration: none;
+	  background-color: #e6e6e6;
+	  *background-color: #d9d9d9;
+	  /* Buttons in IE7 don't get borders, so darken on hover */
+
+	  background-position: 0 -15px;
+	  -webkit-transition: background-position 0.1s linear;
+	     -moz-transition: background-position 0.1s linear;
+	       -o-transition: background-position 0.1s linear;
+	          transition: background-position 0.1s linear;
+	   text-decoration: none !important;
+	}
+
+	.btn:focus {
+	  outline: thin dotted #333;
+	  outline: 5px auto -webkit-focus-ring-color;
+	  outline-offset: -2px;
+	}
+
+	.btn.active,
+	.btn:active {
+	  background-color: #e6e6e6;
+	  background-color: #d9d9d9 \9;
+	  background-image: none;
+	  outline: 0;
+	  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+	     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+	          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+	}
+	.btn-large {
+	  padding: 9px 14px;
+	  font-size: 16px;
+	  line-height: normal;
+	  -webkit-border-radius: 5px;
+	     -moz-border-radius: 5px;
+	          border-radius: 5px;
+	}
+	.btn {
+	  border-color: #c5c5c5;
+	  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+	}
+	.btn-primary {
+	  color: #ffffff !important;
+	  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	  background-color: #632A21;
+	  *background-color: #632A21;
+	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7F362B), to(#632A21));
+	  background-image: -webkit-linear-gradient(top, #7F362B, #632A21);
+	  background-image: -o-linear-gradient(top, #7F362B, #632A21);
+	  background-image: linear-gradient(to bottom, #7F362B, #632A21);
+	  background-image: -moz-linear-gradient(top, #7F362B, #632A21);
+	  background-repeat: repeat-x;
+	  border-color: #632A21 #632A21 #002a80;
+	  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff7F362B', endColorstr='#ff632A21', GradientType=0);
+	  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+	}
+
+	.btn-primary:hover,
+	.btn-primary:active,
+	.btn-primary.active,
+	.btn-primary.disabled,
+	.btn-primary[disabled] {
+	  color: #ffffff;
+	  background-color: #632A21;
+	  *background-color: #003bb3;
+	}
+
+	.btn-primary:active,
+	.btn-primary.active {
+	  background-color: #003399 \9;
+	}
+
+	.dropshipping {
 		font: normal 1.2em/1 Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 		text-align: left;
 	}
-	#dropshipping h2 {
+	.dropshipping h2 {
 		font-size: 28px;
 	}
-	#dropshipping h3 {
+	.dropshipping h3 {
 		font-size: 18px;
 		font-weight: 800;
 		margin: 0 0 2px 0;
 	}
-	#dropshipping a {
+	.dropshipping a {
 		color: #632A21;
 	}
-	#dropshipping a:hover {
+	.dropshipping a:hover {
 		text-decoration: underline;
 	}
-	#dropshipping hr {
+	.dropshipping hr {
 		border-top: 1px solid #eee;
 		background-color: transparent;
 		clear: both;
 		margin: 20px 0;
 	}
-	#dropshipping p {
+	.dropshipping p {
 		line-height: 1.3em;
 		margin: 0 0 0.5em 0;
 	}
-	#dropshipping p small {}
-	#dropshipping address {
+	.dropshipping p small {}
+	.dropshipping address {
 		line-height: 1.3em;
 		margin: 0 0 10px;
 		font-style: normal;
 	}
-	#dropshipping ol {
+	.dropshipping ol {
 		list-style-type: decimal;
 	}
-	#dropshipping ol li {
+	.dropshipping ol li {
 		list-style: inherit;
 		margin: 0 0 8px;
 	}
 </style>
 
-<div id="dropshipping">
+<div class="dropshipping">
 
 	<h2>Drop-shipping with Village Wrought Iron</h2>
 	<p>For information on Drop Shipping please download the Drop Ship Account Information Letter PDF below. To apply for a drop ship account, please download the Drop Ship Account Application PDF below and follow the included directions.</p>
@@ -74,7 +200,7 @@
 
 	<hr>
 
-	<p><a href="https://www.villagewroughtiron.com/ecatalog/2012_Catalog.pdf">View Current Catalog</a></p>
+	<p><a class="btn btn-primary btn-large" href="https://www.villagewroughtiron.com/ecatalog/2012_Catalog.pdf">View Current Catalog</a></p>
 
 	<hr>
 
